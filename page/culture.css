@@ -7,42 +7,32 @@
 }
 
 body {
-    /* position: fixed; */
-     display: inline;
-     flex: wrap;
-    justify-content: center;
-    align-items: center; 
-    min-height: 450vh; 
-    width: auto;
+    min-height: 320vh;
+}
+
+.main {
     width: 100%;
-    height: 320px;
-   
-    
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    /* padding-left: 100px;
-    padding-right: 200px; */
-    /* position: fixed; */
-     margin-left: 200px;
-    width: 1150px;
-    height: 320px;  
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* min-height: 20vh; */
+    display: block;
+    /* margin-left: -1500px; */
+    width: 100%;
 }
 
 .intro {
-    position: relative;
+    position: sticky;
     text-align: center;
-    padding-top: 200px;
-    /* padding-left: 100px; */
+    margin-top: 90px;
+    margin-bottom: 100px;
+    width: 100%;
 
 
 }
+
 
 
 .one {
@@ -52,27 +42,28 @@ body {
     font-size: clamp(1.5rem, -61.625rem + 200vw, 0.875rem);
     padding-top: 30px;
     margin-bottom: -22px;
+    text-align: center;
     position: relative;
 
 }
 
- .intro h1 {
+.intro h1 {
     position: relative;
-    color: rgb(19, 153, 153);
+    color: #29B0A7;
     font-size: clamp(2.75rem, -61.625rem + 200vw, 0.875rem);
     font-style: italic;
     height: 65px;
     font-size: 70px;
     z-index: -2;
 
-} 
+}
 
 .two {
     font-size: 40px;
     font-family: cursive;
     font-style: oblique;
     margin-top: -13px;
-    color: rgb(248, 141, 41);
+    color: #F58025;
     font-size: clamp(1.5rem, -61.625rem + 200vw, 0.875rem);
 
 
@@ -81,7 +72,7 @@ body {
 .three {
     font-style: oblique;
     font-family: cursive;
-    color: rgb(248, 141, 41);
+    color: #F58025;
     font-size: clamp(1.5rem, -61.625rem + 200vw, 0.875rem);
 }
 
@@ -93,102 +84,141 @@ body {
     padding-top: 30px;
 }
 
- .emp1 img {
-    position: absolute;
-    margin: -380px -420px;
-    padding: 13px;
+.image {
+    position:sticky;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emp1 img {
+    /* position: relative; */
+    justify-content: center;
+    /* align-items: center; */
+    top: -40px;
+    left: 520px;
+
 
 }
 
 .emp2 img {
-    position: absolute;
-    margin: -390px 250px 0 290px;
+    position: relative;
+    /* margin: -390px 250px 0 290px; */
+    
+    left: 1030px;
 }
 
 .emp3 {
-    position: absolute;
-    margin: -110px 1000px 0;
+    position: relative;
+    top: 180px;
+    left: 950px;
 }
 
 .emp4 {
-    position: absolute;
-    margin: 60px 650px;
+    position: relative;
+    top: 400px;
+    left: 400px;
 
 }
 
 .emp5 {
-    position: absolute;
-    margin: 60px 310px;
-
+    position: relative;
+    top: 400px;
+    /* left: 680px; */
+    right: 150px;
 }
 
 .light {
-    position: absolute;
-    margin: -90px 0px 0px 80px;
+    position: relative;
+    /* margin: -90px 0px 0px 80px; */
+    top: 300px;
+    right: 600px;
 
 }
 
 .gua {
     position: absolute;
-    margin: -250px 10px 40px 10px;
-
+    /* margin: -250px 10px 40px 10px; */
+    top: 130px;
+    right: 1150px;
 }
 
 .mirchi {
-    position: absolute;
-    margin: 20px 850px;
+    position: relative;
+    /* margin: 20px 850px; */
+    right: 400px;
+    top: 350px;
 }
 
- .connect p {
-    font-family: cursive;
-    position: relative;
-    font-size: 18px;
-    line-height: 1.3em;
-    padding-top: 30px;
-    padding-right: 550px;
-} 
 
- .ten {
+
+.connect {
+    display: block;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+
+}
+
+
+
+.connect .para {
+    font-family: cursive;
+    /* position: relative; */
+    font-size: 20px;
+    line-height: 1.3em;
+    margin-left: 200px;
+    
+    text-align: left;
+    /* padding-top: 30px; */
+    /* padding-right: 550px; */
+}
+
+.ten {
     position: relative;
-    color: rgb(19, 153, 153);
+    margin-left: 100px;
+    color: #29B0A7;
     font-size: clamp(2.75rem, -61.625rem + 200vw, 0.875rem);
     font-style: italic;
-    height: 65px;
+    text-align: left;
     font-size: 50px;
     z-index: -1;
-    padding-right: 600px;
-} 
+    margin-left: 200px;
+    /* padding-right: 600px; */
+}
 
-  .connect .one {
+.connect .one {
     position: relative;
-    padding-right: 800px;
+    text-align: left;
+    margin-left: 200px;
+    /* padding-right: 800px; */
     font-size: 30px;
 }
 
 .comm img {
     position: relative;
-    width: 500px;
-    height: 300px;
-    margin: -300px 0px 100px 600px;
+    width: 25%;
+    margin: -150px 0px 100px 980px;
     border-radius: 60px;
 
 }
 
 .com {
     position: relative;
-    display: inl;
+   
     border: 2px solid rgb(231, 235, 10);
     box-shadow: 0 0 20px rgb(231, 235, 10);
     ;
-    background-color: rgb(247, 121, 37);
+    background-color: #F58025;
     width: 400px;
     height: 210px;
     font-size: 18px;
     border-radius: 60px;
     padding-left: 15px;
-    margin-left: 800px;
+    margin-left: 950px;
     margin-top: -130px;
- } 
+}
 
 .com p {
     display: inline;
@@ -197,12 +227,13 @@ body {
 
 
 
-} 
+}
 
 .com h1 {
     font-weight: 800;
     font-style: oblique;
     font-family: cursive;
+    font-size: 24px;
 }
 
 .com a {
@@ -212,17 +243,28 @@ body {
     color: black;
 }
 
+.wapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+
+}
+
+
 .belief {
     position: relative;
     width: 680px;
     height: 1300px;
-    margin: -30px 300px 80px 80px;
+    /* margin: -30px 300px 80px 80px; */
     padding: 300px;
-    border: 2px solid rgb(19, 153, 153);
+    border: 2px solid #29B0A7;
     border-radius: 100px;
-    background-color: rgb(23, 163, 163);
+    background-color: #29B0A7;
     box-shadow: 0 0 15px rgb(88, 247, 247);
     opacity: 1;
+    margin-right: 350px;
 }
 
 .belief h2 {
@@ -243,7 +285,7 @@ body {
     margin: 232px -250px -150px;
 
 }
- 
+
 .belief p {
     display: flex;
     font-size: 21px;
@@ -296,7 +338,7 @@ body {
 
 .two h2 {
     margin: 90px 150px -140px -240px;
-} 
+}
 
 .box1 p {
     color: #000;
@@ -370,7 +412,7 @@ body {
     margin-top: 35px;
     margin-right: -720px;
 
- } 
+}
 
 .belief .box5 {
     width: 50px;
@@ -393,102 +435,119 @@ body {
     margin-right: -790px;
 
 }
- 
- @media only screen and (max-width:750px){
-    .container{
+
+@media only screen and (max-width:750px) {
+    .container {
         margin-left: 10px;
         /* position: fixed ; */
     }
-    .intro{
+
+    .intro {
         height: 500px;
         width: 600px;
         justify-content: center;
         align-items: center;
-       
+
     }
-    .intro{
+
+    .intro {
         margin-left: 55px;
     }
-    .light,.gua{
+
+    .light,
+    .gua {
         display: none;
     }
-    .emp5{
+
+    .emp5 {
         margin-left: 20px;
         margin-top: -20px;
 
     }
-    .emp1{
+
+    .emp1 {
         margin-left: 160px;
         margin-top: 55px;
     }
-    .emp3{
+
+    .emp3 {
         margin-left: 290px;
         margin-top: -470px;
     }
-    .emp2{
+
+    .emp2 {
         margin-right: 160px;
     }
-    .mirchi{
-        margin-left:  280px; ;
+
+    .mirchi {
+        margin-left: 280px;
+        ;
         margin-top: -20px;
     }
 
-    .emp4{
+    .emp4 {
         margin-left: 540px;
         margin-top: -20px;
     }
 
 
-    .h2,.p, .h1{
-        margin-left:200px;
+    .h2,
+    .p,
+    .h1 {
+        margin-left: 200px;
         width: 510px;
     }
 
-    .connect{
+    .connect {
         height: auto;
-        width: 800px ;
+        width: 100%;
     }
 
-    .comm img{
+    .comm img {
         margin-bottom: 300px;
-        margin-left: -30px;
+        margin-left: -130px;
         margin-top: 100px;
         height: 600px;
-        width: 800px;
+        width: 100%;
         border-radius: 80px;
     }
 
-    .com{
+    .com {
         margin-left: 250px;
-        margin-top: -420px ;
-        width: 500px ;
+        margin-top: -420px;
+        width: 500px;
         height: 500px;
     }
 
-    .com h1{
+    .com h1 {
         font-size: 40px;
         font-weight: 800;
         margin-top: 25px;
         margin-bottom: 30px;
     }
-    .com p{
-        font-family: sans-serif ;
+
+    .com p {
+        font-family: sans-serif;
         font-style: normal;
         font-size: 36px;
         text-align: left;
-        
+
     }
-    .com a{
+
+    .com a {
         font-size: 29px;
     }
-    .connect h2 , .ten {
+
+    .connect h2,
+    .ten {
         margin-left: 160px;
 
     }
-    .connect p{
+
+    .connect p {
         font-size: 22px;
         width: 1300px;
         margin-left: 30px;
-    } 
+    }
 
- } 
+}
